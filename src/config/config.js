@@ -5,8 +5,9 @@ if (!process.env.MONGO_URL) {
     throw new Error("Please provide MONGO_URL in the enivorment file");
 }
 
+
 export const config = {
-    port: process.env.PORT,
+    jwt_secret: process.env.JWT_SECRET,
     mongo_url: process.env.MONGO_URL,
 };
 
